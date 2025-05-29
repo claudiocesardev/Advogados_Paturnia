@@ -18,7 +18,7 @@
 
     header {
       width: 100%;
-      background-color: #8B0000;
+      background-color: #490000;
       padding: 15px 40px;
       box-shadow: 0 3px 6px rgba(0,0,0,0.5);
       display: flex;
@@ -41,7 +41,7 @@
     .logo {
       font-weight: 700;
       font-size: 26px;
-      color: white;
+      color: #e7aa02;
       text-transform: uppercase;
       letter-spacing: 2px;
     }
@@ -76,7 +76,7 @@
     }
 
     nav a {
-      color: white;
+      color: rgb(255, 255, 255);
       text-decoration: none;
       font-weight: 600;
       text-transform: uppercase;
@@ -137,7 +137,7 @@
       color: #ff4d4d;
       margin-bottom: 20px;
       font-size: 2rem;
-      border-bottom: 3px solid #8B0000;
+      border-bottom: 3px solid #000000;
       padding-bottom: 5px;
       width: fit-content;
     }
@@ -215,7 +215,6 @@
       border-top: 3px solid #8B0000;
     }
 
-    /* Ícone WhatsApp flutuante */
     .whatsapp-float {
       position: fixed;
       width: 60px;
@@ -246,6 +245,7 @@
       100% { transform: scale(1); }
     }
 
+    /* RESPONSIVO PARA CELULAR */
     @media (max-width: 768px) {
       header {
         flex-direction: column;
@@ -253,21 +253,41 @@
         padding: 15px 20px;
       }
 
+      .logo-container {
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
       .contact-info {
+        width: 100%;
         flex-direction: column;
         align-items: flex-start;
-        gap: 5px;
-        margin-top: 10px;
+        gap: 10px;
+        margin-top: 15px;
       }
 
       nav {
+        width: 100%;
         flex-direction: column;
+        align-items: flex-start;
         gap: 10px;
-        margin-top: 20px;
+        margin-top: 15px;
+      }
+
+      nav a {
+        padding: 10px 0;
+        font-size: 0.95rem;
       }
 
       .banner {
         height: 220px;
+        border-radius: 0;
+      }
+
+      .banner .overlay h1 {
+        font-size: 1.6rem;
       }
 
       section#areas ul {
@@ -276,6 +296,28 @@
 
       section#contato form {
         max-width: 100%;
+        width: 100%;
+      }
+
+      section#contato input,
+      section#contato textarea {
+        width: 100%;
+      }
+
+      .map-container {
+        height: 250px;
+      }
+
+      .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+      }
+
+      .whatsapp-float img {
+        width: 24px;
+        height: 24px;
       }
     }
   </style>
@@ -284,7 +326,7 @@
 
 <header>
   <div class="logo-container">
-    <img src="imagens/paturnia_logo_branca.png" alt="Logo Paturnia" />
+    <img src="imagens/Made with insMind-Captura de tela 2025-05-29 133844.png" alt="Logo Paturnia" />
     <div class="logo">Paturnia Advogados</div>
   </div>
 
